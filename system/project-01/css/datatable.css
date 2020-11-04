@@ -1,0 +1,232 @@
+.dt {
+  width: calc(100% + 10px) !important;
+  border-spacing: 5px 5px;
+  margin-left: -5px; }
+  .dt__header {
+    display: none; }
+  .dt__footer {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    .dt__footer__left {
+      flex-grow: 1; }
+    .dt__footer__right .dataTables_paginate {
+      display: inline-flex; }
+      .dt__footer__right .dataTables_paginate span {
+        margin: 0px 5px;
+        display: inline-flex; }
+      .dt__footer__right .dataTables_paginate .ellipsis {
+        display: none; }
+      .dt__footer__right .dataTables_paginate .paginate_button {
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        margin-left: 5px;
+        background-color: rgba(255, 255, 255, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer; }
+        .dt__footer__right .dataTables_paginate .paginate_button.current {
+          transition: 0.3s;
+          transform: translateY(-2px);
+          box-shadow: 0px 10px 15px -10px #EB5160;
+          background-color: #EB5160;
+          color: #FFFFFF; }
+  .dt__field-group .field {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.5); }
+  .dt__field-group label {
+    font-size: 12px;
+    color: #FFFFFF; }
+  .dt thead th,
+  .dt thead td,
+  .dt tbody th,
+  .dt tbody td,
+  .dt tfoot th,
+  .dt tfoot td {
+    padding: 5px 15px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 2.5px;
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: left;
+    color: #FFFFFF;
+    white-space: nowrap; }
+    .dt thead th:first-child,
+    .dt thead td:first-child,
+    .dt tbody th:first-child,
+    .dt tbody td:first-child,
+    .dt tfoot th:first-child,
+    .dt tfoot td:first-child {
+      width: 30px; }
+    .dt thead th:last-child,
+    .dt thead td:last-child,
+    .dt tbody th:last-child,
+    .dt tbody td:last-child,
+    .dt tfoot th:last-child,
+    .dt tfoot td:last-child {
+      text-align: right; }
+  .dt tbody {
+    border-spacing: 15px 30px; }
+    .dt tbody > input[type="checkbox"] {
+      display: none; }
+    .dt tbody tr th.actions, .dt tbody tr td.actions {
+      justify-content: initial !important; }
+      .dt tbody tr th.actions a,
+      .dt tbody tr th.actions button, .dt tbody tr td.actions a,
+      .dt tbody tr td.actions button {
+        padding: 0px;
+        width: 30px;
+        height: 30px;
+        border-radius: 3px; }
+        .dt tbody tr th.actions a i,
+        .dt tbody tr th.actions button i, .dt tbody tr td.actions a i,
+        .dt tbody tr td.actions button i {
+          font-size: 18px; }
+    .dt tbody tr.parent th,
+    .dt tbody tr.parent td, .dt tbody tr.child th,
+    .dt tbody tr.child td, .dt tbody tr:hover th,
+    .dt tbody tr:hover td, .dt tbody tr.active th,
+    .dt tbody tr.active td {
+      transition: 0.3s;
+      background-color: #EB5160;
+      color: #FFFFFF;
+      cursor: pointer; }
+      .dt tbody tr.parent th .dtr-details,
+      .dt tbody tr.parent td .dtr-details, .dt tbody tr.child th .dtr-details,
+      .dt tbody tr.child td .dtr-details, .dt tbody tr:hover th .dtr-details,
+      .dt tbody tr:hover td .dtr-details, .dt tbody tr.active th .dtr-details,
+      .dt tbody tr.active td .dtr-details {
+        margin-left: -5px;
+        margin-right: -5px;
+        padding-top: 10px;
+        display: flex;
+        flex-wrap: wrap; }
+        .dt tbody tr.parent th .dtr-details > li,
+        .dt tbody tr.parent td .dtr-details > li, .dt tbody tr.child th .dtr-details > li,
+        .dt tbody tr.child td .dtr-details > li, .dt tbody tr:hover th .dtr-details > li,
+        .dt tbody tr:hover td .dtr-details > li, .dt tbody tr.active th .dtr-details > li,
+        .dt tbody tr.active td .dtr-details > li {
+          margin: -10px -10px 0px -10px;
+          padding: 10px 10px 10px 10px;
+          width: 33.333333%;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          text-align: left; }
+          .dt tbody tr.parent th .dtr-details > li:nth-child(3n),
+          .dt tbody tr.parent td .dtr-details > li:nth-child(3n), .dt tbody tr.child th .dtr-details > li:nth-child(3n),
+          .dt tbody tr.child td .dtr-details > li:nth-child(3n), .dt tbody tr:hover th .dtr-details > li:nth-child(3n),
+          .dt tbody tr:hover td .dtr-details > li:nth-child(3n), .dt tbody tr.active th .dtr-details > li:nth-child(3n),
+          .dt tbody tr.active td .dtr-details > li:nth-child(3n) {
+            text-align: right; }
+          .dt tbody tr.parent th .dtr-details > li .dtr-title,
+          .dt tbody tr.parent td .dtr-details > li .dtr-title, .dt tbody tr.child th .dtr-details > li .dtr-title,
+          .dt tbody tr.child td .dtr-details > li .dtr-title, .dt tbody tr:hover th .dtr-details > li .dtr-title,
+          .dt tbody tr:hover td .dtr-details > li .dtr-title, .dt tbody tr.active th .dtr-details > li .dtr-title,
+          .dt tbody tr.active td .dtr-details > li .dtr-title {
+            font-size: 14px;
+            letter-spacing: 1px;
+            font-weight: bold; }
+          @media all and (max-width: 992px) {
+            .dt tbody tr.parent th .dtr-details > li,
+            .dt tbody tr.parent td .dtr-details > li, .dt tbody tr.child th .dtr-details > li,
+            .dt tbody tr.child td .dtr-details > li, .dt tbody tr:hover th .dtr-details > li,
+            .dt tbody tr:hover td .dtr-details > li, .dt tbody tr.active th .dtr-details > li,
+            .dt tbody tr.active td .dtr-details > li {
+              width: 50%;
+              flex-grow: 1; }
+            .dt tbody tr.parent th .dtr-details > li:nth-child(3n),
+            .dt tbody tr.parent td .dtr-details > li:nth-child(3n), .dt tbody tr.child th .dtr-details > li:nth-child(3n),
+            .dt tbody tr.child td .dtr-details > li:nth-child(3n), .dt tbody tr:hover th .dtr-details > li:nth-child(3n),
+            .dt tbody tr:hover td .dtr-details > li:nth-child(3n), .dt tbody tr.active th .dtr-details > li:nth-child(3n),
+            .dt tbody tr.active td .dtr-details > li:nth-child(3n) {
+              text-align: left; }
+            .dt tbody tr.parent th .dtr-details > li:nth-child(2n),
+            .dt tbody tr.parent td .dtr-details > li:nth-child(2n), .dt tbody tr.child th .dtr-details > li:nth-child(2n),
+            .dt tbody tr.child td .dtr-details > li:nth-child(2n), .dt tbody tr:hover th .dtr-details > li:nth-child(2n),
+            .dt tbody tr:hover td .dtr-details > li:nth-child(2n), .dt tbody tr.active th .dtr-details > li:nth-child(2n),
+            .dt tbody tr.active td .dtr-details > li:nth-child(2n) {
+              text-align: right; } }
+          @media all and (max-width: 768px) {
+            .dt tbody tr.parent th .dtr-details > li,
+            .dt tbody tr.parent td .dtr-details > li, .dt tbody tr.child th .dtr-details > li,
+            .dt tbody tr.child td .dtr-details > li, .dt tbody tr:hover th .dtr-details > li,
+            .dt tbody tr:hover td .dtr-details > li, .dt tbody tr.active th .dtr-details > li,
+            .dt tbody tr.active td .dtr-details > li {
+              width: 100%;
+              text-align: left !important; }
+            .dt tbody tr.parent th .dtr-details > li:nth-child(2n),
+            .dt tbody tr.parent td .dtr-details > li:nth-child(2n), .dt tbody tr.child th .dtr-details > li:nth-child(2n),
+            .dt tbody tr.child td .dtr-details > li:nth-child(2n), .dt tbody tr:hover th .dtr-details > li:nth-child(2n),
+            .dt tbody tr:hover td .dtr-details > li:nth-child(2n), .dt tbody tr.active th .dtr-details > li:nth-child(2n),
+            .dt tbody tr.active td .dtr-details > li:nth-child(2n) {
+              text-align: left; } }
+      .dt tbody tr.parent th.actions .button,
+      .dt tbody tr.parent td.actions .button, .dt tbody tr.child th.actions .button,
+      .dt tbody tr.child td.actions .button, .dt tbody tr:hover th.actions .button,
+      .dt tbody tr:hover td.actions .button, .dt tbody tr.active th.actions .button,
+      .dt tbody tr.active td.actions .button {
+        background-color: #333333;
+        color: #FFFFFF; }
+    .dt tbody .dataTables_empty {
+      text-align: center !important;
+      color: rgba(255, 255, 255, 0.5); }
+      .dt tbody .dataTables_empty:before {
+        content: none !important; }
+  .dt thead th,
+  .dt thead td,
+  .dt tfoot th,
+  .dt tfoot td {
+    background-color: rgba(0, 0, 0, 0.5); }
+  .dt tfoot th,
+  .dt tfoot td {
+    padding: 0px;
+    background-color: transparent; }
+    .dt tfoot th .field-group,
+    .dt tfoot td .field-group {
+      margin-bottom: 0px; }
+      .dt tfoot th .field-group .field,
+      .dt tfoot td .field-group .field {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-color: rgba(255, 255, 255, 0.2);
+        color: rgba(255, 255, 255, 0.5); }
+  .dt:not(.collapsed) thead th:not(.dataTables_empty):first-child,
+  .dt:not(.collapsed) thead td:not(.dataTables_empty):first-child,
+  .dt:not(.collapsed) tbody th:not(.dataTables_empty):first-child,
+  .dt:not(.collapsed) tbody td:not(.dataTables_empty):first-child,
+  .dt:not(.collapsed) tfoot th:not(.dataTables_empty):first-child,
+  .dt:not(.collapsed) tfoot td:not(.dataTables_empty):first-child {
+    display: none; }
+  .dt.collapsed thead th:first-child,
+  .dt.collapsed thead td:first-child,
+  .dt.collapsed tfoot th:first-child,
+  .dt.collapsed tfoot td:first-child {
+    display: table-cell; }
+  .dt.collapsed tbody th:first-child,
+  .dt.collapsed tbody td:first-child {
+    display: table-cell; }
+  .dt.collapsed tbody tr th:not(.child):first-child,
+  .dt.collapsed tbody tr td:not(.child):first-child {
+    content: "";
+    height: 30px;
+    background-color: #EB5160; }
+    .dt.collapsed tbody tr th:not(.child):first-child:before,
+    .dt.collapsed tbody tr td:not(.child):first-child:before {
+      content: "add";
+      font-family: "Material Icons";
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  .dt.collapsed tbody tr.parent th:not(.child):first-child,
+  .dt.collapsed tbody tr.parent td:not(.child):first-child {
+    content: ""; }
+    .dt.collapsed tbody tr.parent th:not(.child):first-child:before,
+    .dt.collapsed tbody tr.parent td:not(.child):first-child:before {
+      content: "remove"; }

@@ -1,0 +1,49 @@
+$sizes: xs, sm, md, lg, xl;
+$maxColumns: 12;
+
+@mixin setResponsiveSize($type, $size) {
+    @for $i from 1 through $maxColumns {
+        .#{$type}-#{$size}-#{$i} {
+            max-width: calc(100% / #{$maxColumns} * #{$i});
+            flex-basis: calc(100% / #{$maxColumns} * #{$i});
+        }
+    }
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    > .col,
+    > div[class*="col-xl-"],
+    > div[class*="col-lg-"],
+    > div[class*="col-md-"],
+    > div[class*="col-sm-"],
+    > div[class*="col-xs-"] {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media all and (max-width: 576px) {
+        @include setResponsiveSize(col, xs);
+    }
+
+    @media all and (min-width: 576px) {
+        @include setResponsiveSize(col, xs);
+        @include setResponsiveSize(col, sm);
+    }
+
+    @media all and (min-width: 768px) {
+        @include setResponsiveSize(col, md);
+    }
+
+    @media all and (min-width: 992px) {
+        @include setResponsiveSize(col, lg);
+    }
+
+    @media all and (min-width: 1200px) {
+        @include setResponsiveSize(col, xl);
+    }
+}

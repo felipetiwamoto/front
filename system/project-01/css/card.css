@@ -1,0 +1,45 @@
+.card__content {
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 30px;
+  display: block;
+  background-color: #FFFFFF;
+  color: #444444; }
+
+.card input[type="checkbox"]:checked ~ .card__content {
+  background-color: #EB5160; }
+  .card input[type="checkbox"]:checked ~ .card__content * {
+    color: #FFFFFF; }
+
+.card__header {
+  margin-bottom: 10px; }
+
+.card__subtitle {
+  font-weight: normal;
+  color: #777777; }
+
+.card__description {
+  font-size: 14px;
+  color: #555555; }
+
+.card__footer {
+  margin-top: 10px; }
+
+.card__actions {
+  margin-left: -2.5px;
+  margin-right: -2.5px;
+  display: flex;
+  justify-content: flex-end; }
+
+.card__item {
+  margin-left: 2.5px;
+  margin-right: 2.5px; }
+  .card__item a,
+  .card__item button {
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px; }
+    .card__item a i,
+    .card__item button i {
+      font-size: 18px; }

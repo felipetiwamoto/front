@@ -1,0 +1,61 @@
+@import "theme";
+
+.card {
+    &__content {
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 30px;
+        display:block;
+        background-color: $white;
+        color: $grey8;
+    }
+
+    input[type="checkbox"]:checked ~ .card__content {
+        background-color: $primary;
+        
+        *{
+            color: $white;
+        }
+    }
+
+    &__header {
+        margin-bottom: 10px;
+    }
+    &__title {
+    }
+    &__subtitle {
+        font-weight: normal;
+        color: $grey6;
+    }
+    &__body {
+    }
+    &__description {
+        font-size: 14px;
+        color: $grey7;
+    }
+    &__footer {
+        margin-top: 10px;
+    }
+    &__actions {
+        margin-left: -2.5px;
+        margin-right: -2.5px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__item {
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+
+        a,
+        button {
+            padding: 0px;
+            width: 30px;
+            height: 30px;
+            border-radius: 3px;
+
+            i {
+                font-size: 18px;
+            }
+        }
+    }
+}

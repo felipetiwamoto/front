@@ -1,0 +1,59 @@
+#page-login h1 {
+  font-size: 28px;
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+  color: #555555;
+  display: inline-block;
+  position: relative; }
+  #page-login h1:after {
+    content: "";
+    left: 0px;
+    bottom: 0px;
+    width: 50px;
+    height: 3px;
+    z-index: -1;
+    display: inline-flex;
+    background-color: #EB5160;
+    position: absolute; }
+
+#page-login form {
+  z-index: 1;
+  width: 60vw;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px -5px #333;
+  background-color: #FFFFFF;
+  display: inline-flex;
+  position: relative; }
+  #page-login form .left {
+    width: calc(100% - 350px);
+    flex-grow: 1;
+    border-radius: 8px 0px 0px 8px;
+    background-color: #555555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; }
+    #page-login form .left svg {
+      position: absolute;
+      top: 20%;
+      height: 300px; }
+  #page-login form .right {
+    padding: 30px;
+    width: 350px;
+    border-radius: 0px 8px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    #page-login form .right a {
+      font-size: 14px;
+      color: #555555;
+      text-decoration: underline;
+      align-self: flex-end; }
+
+@media all and (max-width: 992px) {
+  #page-login form {
+    width: initial; }
+    #page-login form .left {
+      display: none; } }

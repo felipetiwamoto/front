@@ -1,0 +1,493 @@
+@import "./theme";
+
+body.primary{
+    background-image: linear-gradient(-154deg, $primary 50%, rgba(255, 255, 255, 0.05) 50%);
+    background-color: $primary;
+
+    .main {
+        box-shadow: 0px 5px 30px -10px $grey7;
+        background-color: $grey9;
+        background-image: linear-gradient(-154deg, $grey9 50%, rgba(255, 255, 255, 0.02) 50%);
+    
+        .field-group {
+            .field {
+                background-color: rgba(0, 0, 0, 0.3);
+                border-color: rgba(255, 255, 255, 0.2);
+                color: rgba(255, 255, 255, 0.5);
+            }
+    
+            label {
+                color: $white;
+            }
+        }
+    
+        .leftbar {
+            box-shadow: 0px 0px 15px -5px $black;
+            background-color: $grey9;
+
+            .top {
+                .user {
+                    color: $white;
+                    &__photo {
+                        background-color: $white;
+                    }
+
+                    &__category {
+                        color: $grey4;
+                    }
+                }
+    
+                .menu {
+                    &__link {
+                        color: $white;
+    
+                        &--active {
+                            border-color: $primary;
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+    
+            .footer {
+                &__link {
+                    color: $white;
+                }
+            }
+        }
+    
+        .content {
+            .header {
+                .title {
+                    color: $white;
+
+                    &__description {
+                        &:after {
+                            background-color: $primary;
+                        }
+                    }
+    
+                    .button-add {
+                        background-color: $primary;
+                        color: $white;
+                    }
+                }
+            }
+    
+            .body {
+                > .actions,
+                .form-section {
+                    &__title {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    
+        @media all and (max-width: 992px) {
+            .leftbar {
+                .top {
+                    .menu {
+                        &__link {
+                            border-left-color: transparent;
+                            background-color: $primary;
+    
+                            &--active {
+                                background-color: $primary;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.secondary{
+    background-image: linear-gradient(-154deg, $secondary 50%, rgba(255, 255, 255, 0.05) 50%);
+    background-color: $secondary;
+
+    .select2-container {
+        .select2-selection{
+            &--single,
+            &--multiple {
+                background-color: $white;
+                border-color: $grey9 !important;
+                color: $grey9;
+    
+                .select2-selection {
+                    &__rendered {
+                        .select2-search{
+                            &__field{
+                                color: $grey9;
+                            }
+                        }
+                    }
+        
+                    &__choice {
+                        border: 1px solid $secondary;
+                        background-color: $secondary;
+                        color: $grey9;
+                        &__remove {
+                            color: $grey9;
+                        }
+                    }
+                }
+            }
+    
+            &--single{
+                .select2-selection__rendered{
+                    color: $grey9;
+                }
+            }
+        }
+    
+        &--open,
+        &--focus{
+            ~ label{
+                color: $secondary;
+            }
+        }
+    
+        .select2-dropdown {
+            border: 1px solid $grey9;
+            background-color:$white;
+            color:$grey9;
+    
+            .select2-search{
+                &__field{
+                    background-color: $white;
+                    border-color: $grey9;
+                    color: $grey9;
+                }
+            }
+    
+            .select2-results {
+                &__options{
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $secondary;
+                    }
+                    
+                    &::-webkit-scrollbar-track {
+                        background-color: $white;
+                    }
+                }
+    
+                &__option {
+                    &[aria-selected=true]{
+                        background-color:#{$secondary}55;
+                    }
+    
+                    &--highlighted[aria-selected] {
+                        background-color: $secondary;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        box-shadow: 0px 5px 30px -10px $grey7;
+        background-color: $white;
+        // background-image: linear-gradient(-154deg, $white 50%, rgba(0, 0, 0, 0.05) 50%);
+        
+        .button.primary{
+            background-color:$secondary;
+            border-color:$secondary;
+            color:$white;
+        }
+
+        .field-group {
+            .field {
+                background-color: $white;
+                border-color: $grey9;
+                color:$grey9;
+            }
+    
+            label {
+                color: $grey9;
+
+                &:after{
+                    background-color:$secondary;
+                }
+            }
+        }
+    
+        .leftbar {
+            box-shadow: 0px 0px 15px -5px $black;
+            background-color: $white;
+
+            .top {
+                .user {
+                    color: $grey9;
+                    &__photo {
+                        background-color: $grey9;
+                    }
+
+                    &__category {
+                        color: $grey4;
+                    }
+                }
+    
+                .menu {
+                    &__link {
+                        color: $grey9;
+    
+                        &--active {
+                            border-color: $secondary;
+                            color: $secondary;
+                        }
+                    }
+                }
+            }
+    
+            .footer {
+                &__link {
+                    color: $grey9;
+                }
+            }
+        }
+    
+        .content {
+            .header {
+                .title {
+                    color: $grey9;
+
+                    &__description {
+                        &:after {
+                            background-color: $secondary;
+                        }
+                    }
+    
+                    .button-add {
+                        background-color: $secondary;
+                        color: $white;
+                    }
+                }
+            }
+    
+            .body {
+                > .actions,
+                .form-section {
+                    &__title {
+                        color: $grey9;
+                    }
+                }
+            }
+        }
+    
+        @media all and (max-width: 992px) {
+            .leftbar {
+                .top {
+                    .menu {
+                        &__link {
+                            border-left-color: transparent;
+                            background-color: $secondary;
+    
+                            &--active {
+                                background-color: $secondary;
+                                color: $grey9;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.third{
+    background-image: linear-gradient(-154deg, $third 50%, rgba(255, 255, 255, 0.05) 50%);
+    background-color: $third;
+
+    .select2-container {
+        .select2-selection{
+            &--single,
+            &--multiple {
+                background-color: $white;
+                border-color: $grey9 !important;
+                color: $grey9;
+    
+                .select2-selection {
+                    &__rendered {
+                        .select2-search{
+                            &__field{
+                                color: $grey9;
+                            }
+                        }
+                    }
+        
+                    &__choice {
+                        border: 1px solid $third;
+                        background-color: $third;
+                        color: $grey9;
+                        &__remove {
+                            color: $grey9;
+                        }
+                    }
+                }
+            }
+    
+            &--single{
+                .select2-selection__rendered{
+                    color: $grey9;
+                }
+            }
+        }
+    
+        &--open,
+        &--focus{
+            ~ label{
+                color: $third;
+            }
+        }
+    
+        .select2-dropdown {
+            border: 1px solid $grey9;
+            background-color:$white;
+            color:$grey9;
+    
+            .select2-search{
+                &__field{
+                    background-color: $white;
+                    border-color: $grey9;
+                    color: $grey9;
+                }
+            }
+    
+            .select2-results {
+                &__options{
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $third;
+                    }
+                    
+                    &::-webkit-scrollbar-track {
+                        background-color: $white;
+                    }
+                }
+    
+                &__option {
+                    &[aria-selected=true]{
+                        background-color:#{$third}55;
+                    }
+    
+                    &--highlighted[aria-selected] {
+                        background-color: $third;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        box-shadow: 0px 5px 30px -10px $grey7;
+        background-color: $white;
+        // background-image: linear-gradient(-154deg, $white 50%, rgba(0, 0, 0, 0.05) 50%);
+        
+        .button.primary{
+            background-color:$third;
+            border-color:$third;
+            color:$white;
+        }
+
+        .field-group {
+            .field {
+                background-color: $white;
+                border-color: $grey9;
+                color:$grey9;
+            }
+    
+            label {
+                color: $grey9;
+
+                &:after{
+                    background-color:$third;
+                }
+            }
+        }
+    
+        .leftbar {
+            box-shadow: 0px 0px 15px -5px $black;
+            background-color: $white;
+
+            .top {
+                .user {
+                    color: $grey9;
+                    &__photo {
+                        background-color: $grey9;
+                    }
+
+                    &__category {
+                        color: $grey4;
+                    }
+                }
+    
+                .menu {
+                    &__link {
+                        color: $grey9;
+    
+                        &--active {
+                            border-color: $third;
+                            color: $third;
+                        }
+                    }
+                }
+            }
+    
+            .footer {
+                &__link {
+                    color: $grey9;
+                }
+            }
+        }
+    
+        .content {
+            .header {
+                .title {
+                    color: $grey9;
+
+                    &__description {
+                        &:after {
+                            background-color: $third;
+                        }
+                    }
+    
+                    .button-add {
+                        background-color: $third;
+                        color: $white;
+                    }
+                }
+            }
+    
+            .body {
+                > .actions,
+                .form-section {
+                    &__title {
+                        color: $grey9;
+                    }
+                }
+            }
+        }
+    
+        @media all and (max-width: 992px) {
+            .leftbar {
+                .top {
+                    .menu {
+                        &__link {
+                            border-left-color: transparent;
+                            background-color: $third;
+    
+                            &--active {
+                                background-color: $third;
+                                color: $grey9;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

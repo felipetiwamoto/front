@@ -1,0 +1,40 @@
+.tab {
+  margin-left: -5px;
+  margin-right: -5px;
+  display: flex;
+  flex-wrap: wrap; }
+  .tab__item {
+    margin-left: 5px;
+    margin-right: 5px;
+    min-height: 30px;
+    border-radius: 2.5px;
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    background-color: #EB5160;
+    color: #FFFFFF;
+    cursor: pointer; }
+    .tab__item--active {
+      background-color: transparent;
+      border: 1px solid #EB5160;
+      color: #EB5160; }
+
+@keyframes showTab {
+  from {
+    opacity: 0;
+    transform: translate(0px, 30px);
+    visibility: hidden;
+    height: 0px; }
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    visibility: visible;
+    height: initial; } }
+
+.tab-panel {
+  opacity: 0;
+  margin-top: 15px;
+  visibility: hidden;
+  height: 0px; }
+  .tab-panel--active {
+    animation: showTab 0.5s forwards ease-in; }

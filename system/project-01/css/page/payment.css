@@ -1,0 +1,16 @@
+#payment-page .card-options h3 {
+  margin-bottom: 15px;
+  color: #FFFFFF; }
+
+#payment-page .card-options .card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -2.5px;
+  margin-right: -2.5px;
+  margin-bottom: 30px; }
+  #payment-page .card-options .card__item {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    margin-bottom: 2.5px; }
+    #payment-page .card-options .card__item--active img {
+      box-shadow: 0px 3px 5px #EB5160; }

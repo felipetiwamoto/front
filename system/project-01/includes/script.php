@@ -1,0 +1,16 @@
+<script src="/plugins/jquery/jquery.js"></script>
+<script src="/plugins/datatable/datatable.js"></script>
+<script src="/plugins/datatable/datatable-responsive.js"></script>
+<script src="/plugins/datatable/datatable-buttons.js"></script>
+<script src="/plugins/datatable/datatable-flash.js"></script>
+<script src="/plugins/datatable/datatable-jszip.js"></script>
+<!-- <script src="/plugins/datatable/datatable-pdfmake.js"></script> -->
+<!-- <script src="/plugins/datatable/datatable-vfs-fonts.js"></script> -->
+<script src="/plugins/datatable/datatable-html5.js"></script>
+<script src="/plugins/datatable/datatable-print.js"></script>
+<script src="/plugins/jquery-mask/jquery-mask.min.js"></script>
+<script src="/plugins/select2/select2.min.js"></script>
+<script src="/plugins/toast/toast.min.js"></script>
+<script src="/plugins/form-saver/form-saver.js"></script>
+<script src="/js/form-validation.js"></script>
+<script src="/js/main.js"></script>

@@ -1,0 +1,9 @@
+#page-list {
+  align-items: flex-start; }
+  #page-list .content {
+    width: calc(100% - 200px); }
+    #page-list .content .body,
+    #page-list .content .table-container,
+    #page-list .content .dataTables_wrapper,
+    #page-list .content .dt__body {
+      width: 100%; }
