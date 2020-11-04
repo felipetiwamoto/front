@@ -6,7 +6,8 @@ Somente a parte de front-end esta disponível por enquanto, e alguns projetos n�
 
 Para rodar cada projeto, basta entrar na pasta raiz de cada um e rodar os 2 comandos abaixo:
 
-npm install
+npm install 
+
 php -S localhost:8080
 
 Feito isso, ele estará disponível em http://localhost:8080 
