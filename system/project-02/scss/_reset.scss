@@ -24,7 +24,7 @@ select {
 body {
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: $greyd;
+    background-color: #{$greyd}40;
     color: $grey4;
     font-family: "Roboto", sans-serif;
 }

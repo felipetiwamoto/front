@@ -64,8 +64,19 @@
                 border-radius: 50px;
                 top: 0px;
                 left: 0px;
-                background-color: $primary;
                 position: absolute;
+
+                &.busy{
+                    background-color: $busy;
+                }
+
+                &.online{
+                    background-color: $online;
+                }
+
+                &.offline{
+                    background-color: $offline;
+                }
             }
 
             &__message {
@@ -97,7 +108,16 @@
             width: 60px;
             height: 60px;
             border-radius: 50px;
-            background-color: $grey5;
+            background-color: $primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor:pointer;
+
+            i {
+                font-size: 28px;
+                color: $white;
+            }
         }
     }
 
@@ -111,7 +131,7 @@
 
         &-header {
             padding: 15px 15px;
-            color:$white;
+            color: $white;
             background-color: $primary;
 
             .field-group {
@@ -125,6 +145,14 @@
             overflow-x: hidden;
             overflow-y: auto;
 
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: $primary;
+            }
+
             .contact {
                 &__item {
                     padding-bottom: 5px;
@@ -133,6 +161,7 @@
                     position: relative;
                     display: flex;
                     align-items: center;
+                    cursor:pointer;
                 }
 
                 &__image {
@@ -155,8 +184,19 @@
                     border-radius: 50px;
                     top: 0px;
                     left: 0px;
-                    background-color: $primary;
                     position: absolute;
+
+                    &.busy{
+                        background-color: $busy;
+                    }
+
+                    &.online{
+                        background-color: $online;
+                    }
+
+                    &.offline{
+                        background-color: $offline;
+                    }
                 }
 
                 &__message {
@@ -189,7 +229,7 @@
         &-header {
             padding: 15px 15px;
             background-color: $primary;
-            color:$white;
+            color: $white;
 
             .contact {
                 position: relative;
@@ -216,8 +256,19 @@
                     border-radius: 50px;
                     top: 0px;
                     left: 0px;
-                    background-color: $primary;
                     position: absolute;
+
+                    &.busy{
+                        background-color: $busy;
+                    }
+
+                    &.online{
+                        background-color: $online;
+                    }
+
+                    &.offline{
+                        background-color: $offline;
+                    }
                 }
 
                 &__name {
@@ -233,11 +284,11 @@
             overflow-x: hidden;
             overflow-y: auto;
 
-            &::-webkit-scrollbar{
-                width:5px;
+            &::-webkit-scrollbar {
+                width: 5px;
             }
 
-            &::-webkit-scrollbar-thumb{
+            &::-webkit-scrollbar-thumb {
                 background-color: $primary;
             }
 
@@ -250,7 +301,7 @@
                     flex-direction: column;
                     background-color: $greyc;
 
-                    &:last-child{
+                    &:last-child {
                         margin-bottom: 0px;
                     }
 
@@ -274,10 +325,10 @@
                     float: right;
                     display: inline-flex;
                     flex-direction: column;
-                    text-align:right;
+                    text-align: right;
                     background-color: $greye;
 
-                    &:last-child{
+                    &:last-child {
                         margin-bottom: 0px;
                     }
 
@@ -297,11 +348,15 @@
         }
 
         &-footer {
-            padding:15px 15px;
+            padding: 15px 15px;
             background-color: $primary;
 
-            .field-group{
+            .field-group {
                 margin-bottom: 0px;
+
+                .field{
+                    border:none;
+                }
             }
         }
     }

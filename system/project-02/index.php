@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             </div>
             <div class="right">
                 <div class="logo">Login</div>
-                <form action="/posts.php" method="get">
+                <form action="./posts.php" method="get">
                     <div class="field-group">
                         <input type="text" id="member[email]" class="field large">
                         <label for="member[email]">E-mail <div class="feedback"></div></label>
@@ -36,7 +36,7 @@
                         <label for="member[password]">Senha <div class="feedback"></div></label>
                     </div>
                     <a data-href="forgot-password" class="tab-toggler forgot-password">Esqueci minha senha</a>
-                    <a href="/posts.php" class="button primary large fluid"><i class="login"></i> ENTRAR</a>
+                    <a href="./posts.php" class="button primary large fluid"><i class="login"></i> ENTRAR</a>
                     <a data-href="register" class="tab-toggler register">Criar uma conta</a>
                 </form>
             </div>
@@ -56,7 +56,7 @@
             </div>
             <div class="right">
                 <div class="logo">Cadastrar</div>
-                <form action="/system/project-02/index.php" method="get">
+                <form action="." method="get">
                     <div class="grid">
                         <div class="col-md-6">
                             <div class="field-group">
@@ -99,7 +99,7 @@
             </div>
             <div class="right">
                 <div class="logo">Esqueci <br> minha senha</div>
-                <form action="/system/project-02/index.php" method="get">
+                <form action="." method="get">
                     <div class="field-group">
                         <input type="text" id="member[email]" class="field large">
                         <label for="member[email]">E-mail <div class="feedback"></div></label>
@@ -111,8 +111,8 @@
         </div>
     </section>
 
-    <script src="/js/main.js"></script>
-    <script src="/js/page/index.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/page/index.js"></script>
 </body>
 
 </html>
